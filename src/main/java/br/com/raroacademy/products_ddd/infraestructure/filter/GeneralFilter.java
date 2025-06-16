@@ -1,4 +1,4 @@
-package br.com.raroacademy.products_ddd.config.filter;
+package br.com.raroacademy.products_ddd.infraestructure.filter;
 
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;

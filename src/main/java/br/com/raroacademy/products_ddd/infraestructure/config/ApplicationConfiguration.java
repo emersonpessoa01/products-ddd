@@ -1,4 +1,4 @@
-package br.com.raroacademy.products_ddd.config;
+package br.com.raroacademy.products_ddd.infraestructure.config;
 
 import br.com.raroacademy.products_ddd.handler.InterceptorHandler;
 import lombok.RequiredArgsConstructor;

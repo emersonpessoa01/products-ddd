@@ -1,4 +1,4 @@
-package br.com.raroacademy.products_ddd.config.filter;
+package br.com.raroacademy.products_ddd.infraestructure.filter;
 
 import jakarta.servlet.*;
 import jakarta.servlet.annotation.WebFilter;
