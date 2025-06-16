@@ -1,4 +1,4 @@
-package br.com.raroacademy.products_ddd.domain.repository;
+package br.com.raroacademy.products_ddd.infraestructure.db.repository;
 
 import br.com.raroacademy.products_ddd.domain.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
