@@ -1,6 +1,6 @@
 package br.com.raroacademy.products_ddd.infraestructure.config;
 
-import br.com.raroacademy.products_ddd.handler.InterceptorHandler;
+import br.com.raroacademy.products_ddd.infraestructure.handler.InterceptorHandler;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;

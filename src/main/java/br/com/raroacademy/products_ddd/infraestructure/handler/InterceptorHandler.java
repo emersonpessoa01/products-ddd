@@ -1,4 +1,4 @@
-package br.com.raroacademy.products_ddd.handler;
+package br.com.raroacademy.products_ddd.infraestructure.handler;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
