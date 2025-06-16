@@ -9,21 +9,18 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-@RestController
-@RequestMapping("/products")
-public class ProductControllerImpl {
+
+public class ProductControllerImpl implements ProductController {
     @Autowired
     private ProductService productService;
-    @PostMapping()
-    public ResponseEntity<Product> createProduct(@RequestBody @Validated ProductDTO productDTO) {
-        // Chama o serviço para criar o produto
-        productService.createProduct(productDTO);
 
-        // Aqui você pode adicionar lógica adicional, como retornar uma resposta ou realizar outras operações
-        // Por exemplo, retornar um status HTTP 201 Created
-         return ResponseEntity.status(HttpStatus.CREATED).build();
+    @Override
+    public ResponseEntity<Product> createProduct(ProductDTO productDTO) {
+        productService.createProduct(productDTO);
+        return ResponseEntity.ok().build();
     }
-    @GetMapping
+
+    @Override
     public ResponseEntity<Product> getProduct() {
         // Chama o serviço para obter o produto
         Product product = productService.getProduct().findAll().get(0); // Exemplo de obtenção do primeiro produto
@@ -32,5 +29,6 @@ public class ProductControllerImpl {
         return ResponseEntity.ok(product);
 
     }
+
 
 }
