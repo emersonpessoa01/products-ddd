@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 
 @Getter
@@ -24,16 +25,8 @@ public class Product {
     private String name;
     @Column
     private BigDecimal price;
-    @Column
-    private Boolean status;
 
-    public static Product toProduct(ProductDTO dto) {
-        return new Product(
-                dto.id(),
-                dto.name(),
-                dto.price(),
-                dto.status() == null || dto.status()
-        );
-    }
+
+    List<ProductsStatus> status;
 
 }
