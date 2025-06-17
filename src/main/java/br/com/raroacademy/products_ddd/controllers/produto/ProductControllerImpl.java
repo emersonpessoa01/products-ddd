@@ -1,13 +1,10 @@
-package br.com.raroacademy.products_ddd.controllers;
+package br.com.raroacademy.products_ddd.controllers.produto;
 
 import br.com.raroacademy.products_ddd.domain.dto.ProductDTO;
 import br.com.raroacademy.products_ddd.domain.entity.Product;
 import br.com.raroacademy.products_ddd.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.*;
 
 
 public class ProductControllerImpl implements ProductController {
