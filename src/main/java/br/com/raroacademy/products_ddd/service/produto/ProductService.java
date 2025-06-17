@@ -1,7 +1,7 @@
 package br.com.raroacademy.products_ddd.service;
 
-import br.com.raroacademy.products_ddd.domain.dto.ProductDTO;
-import br.com.raroacademy.products_ddd.domain.entity.Product;
+import br.com.raroacademy.products_ddd.domain.produto.dto.ProductDTO;
+import br.com.raroacademy.products_ddd.domain.produto.entity.Product;
 import br.com.raroacademy.products_ddd.infraestructure.db.jpa.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
