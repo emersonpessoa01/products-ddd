@@ -1,5 +1,6 @@
 package br.com.raroacademy.products_ddd.domain.produto.dto;
 
+import br.com.raroacademy.products_ddd.domain.produto.entity.Product;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 
@@ -14,4 +15,11 @@ public record ProductDTO(
         BigDecimal price,
         Boolean status
 ) {
+        public Product toProduct(ProductDTO productDTO) {
+                return new Product(
+                        productDTO.id(),
+                        productDTO.name(),
+                        productDTO.price()
+                );
+        }
 }
