@@ -1,4 +1,4 @@
-package br.com.raroacademy.products_ddd.domain.dto;
+package br.com.raroacademy.products_ddd.domain.produto.dto;
 
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;

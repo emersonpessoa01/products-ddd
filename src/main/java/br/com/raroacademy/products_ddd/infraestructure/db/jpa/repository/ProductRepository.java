@@ -1,6 +1,6 @@
 package br.com.raroacademy.products_ddd.infraestructure.db.jpa.repository;
 
-import br.com.raroacademy.products_ddd.domain.entity.Product;
+import br.com.raroacademy.products_ddd.domain.produto.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

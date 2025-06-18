@@ -1,15 +1,19 @@
 package br.com.raroacademy.products_ddd.controllers.produto;
 
-import br.com.raroacademy.products_ddd.domain.dto.ProductDTO;
-import br.com.raroacademy.products_ddd.domain.entity.Product;
-import br.com.raroacademy.products_ddd.service.ProductService;
+import br.com.raroacademy.products_ddd.domain.produto.dto.ProductDTO;
+import br.com.raroacademy.products_ddd.domain.produto.entity.Product;
+import br.com.raroacademy.products_ddd.service.produto.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 
 
 public class ProductControllerImpl implements ProductController {
     @Autowired
-    private ProductService productService;
+    private final ProductService productService;
+
+    public ProductControllerImpl(ProductService productService) {
+        this.productService = productService;
+    }
 
     @Override
     public ResponseEntity<Product> createProduct(ProductDTO productDTO) {

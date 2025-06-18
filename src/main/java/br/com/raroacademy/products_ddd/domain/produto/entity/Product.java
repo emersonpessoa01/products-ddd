@@ -1,6 +1,6 @@
-package br.com.raroacademy.products_ddd.domain.entity;
+package br.com.raroacademy.products_ddd.domain.produto.entity;
 
-import br.com.raroacademy.products_ddd.domain.dto.ProductDTO;
+import br.com.raroacademy.products_ddd.domain.produto.dto.ProductDTO;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -27,6 +27,12 @@ public class Product {
     private BigDecimal price;
 
 
-    List<ProductsStatus> status;
+    public static Product toProduct(ProductDTO productDTO) {
+        return new Product(
+                productDTO.id(),
+                productDTO.name(),
+                productDTO.price()
+        );
+    }
 
 }

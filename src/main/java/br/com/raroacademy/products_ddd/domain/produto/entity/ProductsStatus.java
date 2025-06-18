@@ -1,4 +1,4 @@
-package br.com.raroacademy.products_ddd.domain.entity;
+package br.com.raroacademy.products_ddd.domain.produto.entity;
 
 import jakarta.persistence.Column;
 
